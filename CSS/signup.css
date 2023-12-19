@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+   
+}
+
+body,
+input {
+    font-family: sans-serif;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    overflow: hidden;
+
+}
+
+.title {
+    margin-bottom: 5px;
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #353535;
+}
+#err{
+    color: red;
+    width: fit-content;
+    height: fit-content;
+}
+#err2{
+    color: red;
+    width: fit-content;
+    height: fit-content;
+}
+
+
+.inputf {
+    width: 380px;
+    max-width: 100%;
+    height: 55px;
+    background-color: #cfcfcf;
+    margin: 10px 0;
+    border-radius: 55px;
+    display: grid;
+    
+    grid-template-columns: 15% 85%;
+    
+}
+
+.inputf i {
+    text-align: center;
+    line-height: 55px;
+    font-size: 1.1rem;
+}
+
+.inputf input {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+
+}
+
+.inputf input::placeholder {
+    color: rgb(100, 100, 100);
+    font-weight: 500;
+}
+
+.btn-solid {
+    width: 150px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    margin: 10px 0;
+    font-weight: 900;
+    text-transform: uppercase;
+    background-color: #ff7f23;
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn-solid:hover {
+    background-color: #cc5805;
+    transform: scale(0.92);
+
+}
+
+.social-text {
+    padding: 1px;
+    font-size: 1px;
+
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+
+}
+
+.social-icon {
+    height: 45px;
+    width: 45px;
+    border: #9b9a9a 1px solid;
+    margin: 4px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 55px;
+    text-decoration: none;
+    color: #444;
+    cursor: pointer;
+
+}
+
+.social-icon:hover {
+    color: #ff7f23;
+    border-color: #ff7f23;
+}
+
+#btn2 {
+    width: 150px;
+    height: 50px;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 1rem;
+    background: none;
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#btn2:hover {
+    border-color: #444;
+    transform: scale(0.92);
+
+}
+
+.signin{
+    margin-bottom: 20px;
+}
+.signin a{
+    text-decoration: none;
+    color: #ff7f23;
+    cursor: pointer;  
+}
+a:hover{
+ color: #cc5805;
+ text-decoration: underline;
+}
+
+
+
+
+.content {
+
+
+    color: white;
+
+}
+
+.content h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+

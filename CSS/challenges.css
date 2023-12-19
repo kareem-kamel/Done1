@@ -1,0 +1,239 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    /* background-image: linear-gradient(90deg, #ff7f23  , rgba(235, 235, 235, 0.6)  ); */
+    background-image: url(../images/backgroundimage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+@media (max-width: 767px){
+    body{
+        background-image: url(../images/ben-kolde-bs2Ba7t69mM-unsplash.jpg)
+    }
+    .bar{
+        display: none;
+    }
+    /* .challenges .container1{
+        width: 400px;
+    }*/
+    .ch_:hover .container1{
+        width: calc(50%);
+        height: 550px;
+        background-color: rgba(211, 211, 211, 0.6);
+    }
+    .container1addnote{
+        flex-direction: column;
+    }
+    
+}
+/*small screens*/
+@media (min-width: 768px){
+    /* .container1{
+        width: 600px;
+    } */
+}
+/*Medium screens*/
+@media (min-width: 992px){
+    /* .container1{
+        width: 800px;
+    } */
+}
+/*Large screens*/
+@media (min-width: 1200px){
+    /* .container1{
+        width: 1000px;
+    } */
+}
+.Challenges-website{
+    display: flex;
+    
+    
+}
+/*start bar*/
+.Challenges-website .bar{
+    width: 140px;
+    padding: 0 67.5px;
+    height: auto;
+}
+.Challenges-website .bar .repated-line-circle{
+    width: 5px;
+    height: 100%;
+}
+.Challenges-website .bar .line-circle{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.Challenges-website .bar .line-circle .upper-line{
+    width: 100%;
+    height: 40%;
+    background-color: white;
+    
+}
+.Challenges-website .bar .line-circle .circle{
+    width: 65px;
+    height: 65px;
+    background-color: #ff7f23;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    transition: 0.3s;   
+    border: 5px solid white;
+}
+.Challenges-website .bar:hover .circle{
+    width: 110px;
+    height: 110px;
+    border-radius: 40%;
+    
+}
+.Challenges-website .bar:hover .circle + p{
+    font-size: 70px;
+    color: white
+}
+.Challenges-website .bar .line-circle .circle p{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white;
+}
+.line-circle .circle p a{
+    text-decoration: none;
+}
+.Challenges-website .bar .line-circle .lower-line{
+    width: 5px;
+    height: 40%;
+    background-color: white;
+}
+/*end bar*/
+/* start challenges*/
+.Challenges-website .challenges{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    background-color: transparent;
+    flex-direction: column;
+    height: auto;
+}
+.ch_{
+    height: auto;
+    padding-top: 0px;
+    position: relative;
+}
+
+.container1{
+    background-color: rgba(235, 235, 235, 0.897);
+    width: 80%;
+    min-height: 350px;
+    margin: 0px auto 20px;
+    border-radius: 25px; 
+    border-width: 0;
+    transition: 0.3s;
+    position: relative;
+}
+.ch_:hover .container1{
+    width: calc(80% + 30px);
+    height: auto;
+    background-color: rgba(211, 211, 211, 0.85);
+}
+
+
+.container1addnote{
+    border-bottom: #ff7f23 solid 10px;
+    border-top: #6c757d solid 1px;
+    margin: 50px auto;
+    min-height: 300px;
+    width: 80%;
+    background-color: #6c757d;
+    display: flex;
+    align-items: center;
+    /* Adjust spacing as needed */
+    justify-content: center;
+    padding: 30px;
+    height: auto;
+    /* Optional: To adjust the width of the container */
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+.inputfield {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.inputtitle input,
+.inputnote textarea,
+input[type="button"] {
+    width: 100%;
+    padding: 8px;
+    border: 0px solid #ccc;
+    border-radius: 10px;
+}
+input[type="button"]{
+    background-color: #ff7f23;
+    color: white;
+    cursor: pointer;
+}
+.inputtitle input:focus,
+.inputnote textarea:focus{
+    outline: none;
+    padding: 10px;
+}
+
+img {
+    max-width: 30%; /* Adjust the size of the image */
+    height: auto;
+}
+
+
+/*        */
+
+/* Styling for the custom heading */
+.custom-heading {
+    font-size: 2.5em; /* Adjust the font size as needed */
+    color: white; /* Green color */
+    background-color: #6c757d;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: left;
+    padding: 10px;
+    font-size: large;
+}
+
+
+.custom-paragraph {
+    font-size: 1.2em; 
+    color: #333; 
+    text-align: justify;
+    line-height: 1.6;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+
