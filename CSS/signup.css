@@ -8,7 +8,20 @@ body,
 input {
     font-family: sans-serif;
 }
+#hp{
+    background-color: #f4ccb9;
+    color:#ff7f23;
+    font-size: larger;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
 
+}
+#hp:hover{
+   
+    color:#c8713f;
+    transform: scale(0.92);
+}
 form {
     display: flex;
     align-items: center;
@@ -19,6 +32,7 @@ form {
     overflow: hidden;
 
 }
+
 
 .title {
     margin-bottom: 5px;
